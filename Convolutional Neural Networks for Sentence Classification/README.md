@@ -1,6 +1,7 @@
 Convolutional Neural Networks for Sentence Classification
 
-**双通道模型架构图例  Model architecture with two channels for an example sentence **
+
+双通道模型架构图例  Model architecture with two channels for an example sentence
 
 <img src="https://github.com/jm199504/Paper-Notes/blob/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/1.png">
 
