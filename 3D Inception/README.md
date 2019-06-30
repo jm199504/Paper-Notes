@@ -48,9 +48,9 @@
 
 （2）3D CNN Network Structure：两种3D-CNN(MODEL-I & MODEL-II)，其中MODEL-I包含6层3D CNN 层，2层最大池化和3层全连接层(FC1,FC2,FC3)；MODEL-II结合了Inception的思想，包含残差卷积块和空间缩减块且均采用Inception结构，为避免过拟合，两个网络模型均使用Dropout层，且卷积层后拼接ReLu激活函数。
 
-<p style="text-align:center"><img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/2.png"></p>
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/2.png">
 
- <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/3.png" style="align: center;">
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/3.png">
 
 （3）3D Inception-based convolutional neural network：是一个孪生网络（网络间共享权重），其中卷积模块和Inception模块具体可查看后2图。（文中具体介绍了Inception模块的细节）
 
