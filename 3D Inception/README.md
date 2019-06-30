@@ -44,25 +44,25 @@
 
 （1）3D Inception-ResNet：包含1个a模块，9个c模块，1个b模型，并在第2和第7的Inception 3d模块后加入最大池化层（目的减少输出层维度），在最后一个Inception-ResNet模块后添加平均池化层（减少维度至15× 1× 1×256），连接含3840个神经隐藏单元的平坦层，再接入带有sigmoid函数的全连接层实现2分类预测。
 
- 
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/1.png">
 
 （2）3D CNN Network Structure：两种3D-CNN(MODEL-I & MODEL-II)，其中MODEL-I包含6层3D CNN 层，2层最大池化和3层全连接层(FC1,FC2,FC3)；MODEL-II结合了Inception的思想，包含残差卷积块和空间缩减块且均采用Inception结构，为避免过拟合，两个网络模型均使用Dropout层，且卷积层后拼接ReLu激活函数。
 
-图二
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/2.png">
 
-图三
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/3.png">
 
 （3）3D Inception-based convolutional neural network：是一个孪生网络（网络间共享权重），其中卷积模块和Inception模块具体可查看后2图。（文中具体介绍了Inception模块的细节）
 
- 图四
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/4.png">
 
 其中Conv块为：其中n表示输入特征数量
 
-图五
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/5.png">
 
 其中Inception块：
 
- 图六
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/6.png">
 
 原文摘录：
 
@@ -86,7 +86,7 @@ METHOD:
 
 We compare eight different approaches to pancreatic MRI classification with 3D CNNs[8种三维CNN实现胰腺MRI分类]. Taking into account the effect of the depth and width of the model, eight models are: ResNet18, ResNet34, ResNet52 and Inception-ResNet with binary crossentropy or the proposed weighted loss function[损失函数：二元交叉熵和提出的加权损失函数], respectively. The workflow of our method is as follows in Figure 1: 
 
-图七
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/7.png">
 
 3D ResNet Network
 
@@ -102,7 +102,7 @@ ResNet52 contains 1 module (a), 20 modules (b), 3 modules (c) and 1 module (d).
 
 We train the final binary classification models using Adam with learning rate of 0.0001 and batchsize of 16 for 100 epochs. 
 
-图八
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/8.png">
 
 3D Inception-ResNet:
 
@@ -116,11 +116,11 @@ As is shown in Figure 5(b),
 
 The output of the last Inception-ResNet module is sent to an average pooling layer to further reduce it to 15× 1× 1×256, followed by a flatten layer with 3840 hidden units and a dense layer with an output for binary classification with sigmoid nonlinearity. 
 
-图九
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/9.png">
 
 Inception-ResNet module (a) is the first input module. (b) is the output module.
 
-图十
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/10.png">
 
 (c) is the inception_3d module
 
@@ -128,9 +128,8 @@ A Weighted Loss Function
 
 Considering that the data set used in the experiment is classimbalanced. We give the sample with a smaller sample size a little more weight to weaken this imbalance problem on the basis of using data augmentation. We use the cross-entropy function[交叉熵] of tensorflow and modify[调整Loss使其适应于不均衡数据] it to fit our model motivated by which introduced a class-balancing weight on per-pixel term basis for image segmentation and which optimized the cost of decision making. In our method, we just calculate the number of positive and negative categories every time the parameter is updated and iterated, then derive the weight coefficients for each category. The formula is as follows: 
 
-图十一 
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/11.png">
 
- 
 
 TITLE:3D Inception Convolutional Neural Networks For Automatic Lung Nodule Detection 
 
@@ -146,9 +145,9 @@ MODEL-Ⅰ contains 6 3D CNN layers, 2 Maxpool layers and 3 Fully Connected layer
 
 MODEL-Ⅱ with residual convolutional block and spatial reduction block, both of the blocks use inception structure. The details of network architecture are shown in Fig.4. for MODEL- Ⅰ and Fig.5. for MODEL- Ⅱ . To prevent overfitting, both networks use Dropout layer. At the end of each convolutional layers we use ReLU as activation function. 
 
-图十二
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/12.png">
 
-图十三
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/13.png">
 
 In Fig.4, 5 and 6, the ‘K’ in Conv block indicates the number of convolutional kernels; the ‘S’ and ‘V’ in Conv and Maxpool block indicate the padding method of ‘SAME’ and ‘VALID’ respectively. Fig.6. shows the detail of the spatial reduction block and residual conv block in Fig.5. 
 
@@ -164,16 +163,16 @@ In this work we propose a new 3D Inception-based convolutional neural network ar
 
 The main building block of the network is an Inception block (Fig. 5). To eliminate the need of choosing the specific layer  type at each level of the network Inception block uses 4 different bands of layers simultaneously[同时选用4个不同层带]. Besides that, a number of 1 × 1 × 1 convolution filters are used to significantly reduce the number of network parameters[使用1×1×1可降低模型参数] by decreasing the dimension of the feature space. In particular, the first band of the block performs a two successive 3 × 3 × 3 convolutions (equivalent to 5 × 5 × 5 filter)[第1波], the second band performs one 3 × 3 × 3 convolution[第2波], third band performs a max-pool operation[第3波], fourth band performs 1×1×1 convolution[第4波]. Besides that, first three bands use 1×1×1 convolution at the beginning[前三波起初用1×1×1卷积]. Each convolution layer is followed with batch normalization layer[每层卷积层后添加批处理规范化层] and a ReLU[激活函数]. The number of features in each convolution depends on the input and is shown in Fig.5. Thus, the output of the Inception block increases the feature dimension of data in 1.5 times compared to its input[Inception块输出的数据维度是输入的1.5倍]. All these tricks substantially reduce the number of parameters inside the network, while at the same time batch normalization layers accelerate network training.[以上优化可以极大地减少模型参数，批处理规范化层可以加快网络训练]
 
-图十四
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/14.png">
 
 A preliminary 3 × 3 × 3 Conv block with the 4 sequent combinations of Inception block with 3D max-pooling layer form a pipeline of the proposed network architecture[第一层（含4波）构成网络模型的管道]. This pipeline transforms the source spatial data to the feature space[管道目的：将空间数据转为特征空间]. The last modification to reduce the number of network parameters compared to the conventional AlexNet-like networks[对比网络] is to place a 3D average-pooling layer at the end of the pipeline instead of the fully-connected layer[与AlexNet-like网络相比，在末层添加3D平均池化层可减少网络参数]. For each ROI in the brain scan and for each modality we use a separate described above pipeline[对于大脑扫描ROI及模式独立采用管道]. Finally, all pipelines are concatenated and with the following dropout, fully-connected and softmax layers produce the classification result[管道拼接及Dropout,全连接层,softmax层生成分类结果] (Fig. 7). Thus the described network is a siamese network[孪生网络：共享网络权重]which performs the late fusion of the data from input ROIs[对输入的ROI的数据融合].
 
 The usage of batch normalization as mentioned earlier allows us to speed up the network training process and according to eliminate the necessity of using the pretraining techniques[使用批处理规范化可以加快网络训练速度和节省预训练手段] (e.g. autoencoders). Batch normalization partially plays a role of regularization[BN含正则化作用] as it allows each layer of a network to be trained less dependent on other layers[使每层更少依赖于其它层].
 
-图十五
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/15.png">
 
 Proposed network architecture:
 
-图十六
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/16.png">
 
  
