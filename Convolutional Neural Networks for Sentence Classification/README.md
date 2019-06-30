@@ -24,11 +24,11 @@ Convolutional Neural Networks for Sentence Classification
 
 The *k*-dimensional word vector corresponding to the *i*-th word in the sentence 
 
-<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/2.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/2.png">
 
 A sentence of length n is represented as
 
-<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/3.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/3.png">
 
 A feature ci is generated from a window of words xi:i+h−1 by
 
