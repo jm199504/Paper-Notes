@@ -32,29 +32,29 @@ A sentence of length n is represented as
 
 A feature ci is generated from a window of words xi:i+h−1 by
 
-<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/4.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/4.png">
 
 where b∈R is a bias term and f is a non-linear function such as the hyperbolic tangent
 
 This filter is applied to each possible window of words in the sentence                                                      {x1:h,x2:h+1;…;xn-h+1:n}to produce a feature map
 
-<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/5.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/5.png">
 
 We then apply a max-over-time pooling operation
 
-<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/6.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/6.png">
 
 The penultimate layer (note that here we have m filters)
 
-<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/7.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/7.png">
 
 Output unit y
 
-<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/8.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/8.png">
 
 Output unit y with dropout 
 
-<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/9.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/9.png">
 
 Where ◦ is the element-wise multiplication opera-tor and r∈Rm is a ‘masking’ vector of Bernoulli random variables with probability of being 1.
 
@@ -92,7 +92,7 @@ static & non-static 效果对比
 
 • non-static的版本中，bad对应的最相近词为terrible，主要因为在Fune tune的过程中，vector的值发生改变从而更加贴切数据集（情感分类数据集），因此在情感表达的角度该两个词会更加接近；
 
-<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/10.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/10.png">
 
 **数据集**
 
@@ -113,8 +113,8 @@ http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tens
 
 **模型流程**
 
-<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/11.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/11.png">
 
 **CNN-multichannel model模型**
 
-<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/12.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/12.png">
