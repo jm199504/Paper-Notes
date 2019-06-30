@@ -2,4 +2,5 @@
 
 **1. GNN-About-Medical-Treatment ：图神经网络（医疗健康方向）**
 
+**2. 3D Inception：3D Inception（医疗健康方向）**
 
