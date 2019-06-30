@@ -1,10 +1,8 @@
 Convolutional Neural Networks for Sentence Classification
 
- 
-
 **双通道模型架构图例  Model architecture with two channels for an example sentence **
 
-图1
+<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/1.png">
 
 输入层：
 
@@ -22,51 +20,47 @@ Convolutional Neural Networks for Sentence Classification
 
 全连接层与其他卷积神经网络相同，并使用Dropout，即对全连接层上的权值参数给予L2正则化的限制，减轻过拟合程度。
 
- 
-
 **模型流程具体公式**
 
 The *k*-dimensional word vector corresponding to the *i*-th word in the sentence 
 
-图2
+<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/2.png">
 
 A sentence of length n is represented as
 
-图3
+<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/3.png">
 
 A feature ci is generated from a window of words xi:i+h−1 by
 
-图4
+<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/4.png">
 
 where b∈R is a bias term and f is a non-linear function such as the hyperbolic tangent
 
 This filter is applied to each possible window of words in the sentence                                                      {x1:h,x2:h+1;…;xn-h+1:n}to produce a feature map
 
-图5
+<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/5.png">
 
 We then apply a max-over-time pooling operation
 
-图6
+<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/6.png">
 
 The penultimate layer (note that here we have m filters)
 
-图7
+<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/7.png">
 
 Output unit y
 
-图8
+<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/8.png">
 
 Output unit y with dropout 
 
-图9
+<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/9.png">
 
 Where ◦ is the element-wise multiplication opera-tor and r∈Rm is a ‘masking’ vector of Bernoulli random variables with probability of being 1.
 
 At test time, the learned weight vectors are scaled by p such that w^=pw and w^ is used       (without dropout) to score unseen sentences.
 
 We additionally constrain l2-norms of the weight vectors by rescaling w to have ||w||2=s whenever ||w||2>s after a gradient descent step.
-
-
 
 **超参数设置（基于SST-2 dev数据集和利用网格搜索）**
 
@@ -81,8 +75,6 @@ We additionally constrain l2-norms of the weight vectors by rescaling w to have 
 • Mini-batch size：50
 
 • Training is done through stochastic gradient descent over shuffled mini-batches with the Adadelta update rule 
-
-
 
 **四个变种模型**
 
@@ -100,9 +92,7 @@ static & non-static 效果对比
 
 • non-static的版本中，bad对应的最相近词为terrible，主要因为在Fune tune的过程中，vector的值发生改变从而更加贴切数据集（情感分类数据集），因此在情感表达的角度该两个词会更加接近；
 
-图10
-
-
+<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/10.png">
 
 **数据集**
 
@@ -117,19 +107,14 @@ static & non-static 效果对比
 • TREC: TREC question dataset—task involves classifying a question into 6 question types (whether the question is about person, location, numeric information, etc.) .
 
 
-
 **基于TensorFlow实现的CNN文本分类代码**
 
 http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/
 
-
-
 **模型流程**
 
-图11
-
-
+<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/11.png">
 
 **CNN-multichannel model模型**
 
-图12
+<img src="https://github.com/jm199504/Paper-Notes/tree/master/Convolutional%20Neural%20Networks%20for%20Sentence%20Classification/images/12.png">
