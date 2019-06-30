@@ -50,7 +50,7 @@
 
 <p style="text-align:center"><img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/2.png"></p>
 
- <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/3.png">
+ <img src="https://github.com/jm199504/Paper-Notes/blob/master/3D%20Inception/images/3.png" style="align: center;">
 
 （3）3D Inception-based convolutional neural network：是一个孪生网络（网络间共享权重），其中卷积模块和Inception模块具体可查看后2图。（文中具体介绍了Inception模块的细节）
 
