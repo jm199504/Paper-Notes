@@ -1,4 +1,4 @@
-# 成像检查（GNN）
+# 成像检查论文梳理（GNN）
 
 ## 1-EEG Emotion Recognition Using Dynamical Graph Convolutional Neural Networks and Broad Learning System
 
