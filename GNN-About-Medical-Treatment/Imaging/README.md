@@ -1,4 +1,4 @@
-# 成像检查（GNN）
+# 成像检查论文梳理（GNN）
 
 ## 1-EEG Emotion Recognition Using Dynamical Graph Convolutional Neural Networks and Broad Learning System
 
@@ -60,7 +60,7 @@ DGCNN平均识别准确率：90.40%
 
 ### 网络框图
 
-​                                                  
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GNN-About-Medical-Treatment/Imaging/images/1.png">                                               
 
 ### 未来工作
 
@@ -112,7 +112,7 @@ SEED数据集交叉验证的平均准确率分别为：86.23％，84.54％和85.
 
 ### 网络框图
 
-   
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GNN-About-Medical-Treatment/Imaging/images/2.png">   
 
 ### 未来工作
 
@@ -158,11 +158,11 @@ Zisha Zhong ; Yusung Kim ; Leixin Zhou ; Kristin Plichta ; Bryan Allen ; John Bu
 
 ### 结果
 
-   
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GNN-About-Medical-Treatment/Imaging/images/3-1.png">   
 
 ### 网络框图
 
-   
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GNN-About-Medical-Treatment/Imaging/images/3-1.png">   
 
 ### 未来工作
 

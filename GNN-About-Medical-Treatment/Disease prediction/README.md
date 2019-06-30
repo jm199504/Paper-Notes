@@ -36,7 +36,7 @@ Autism Brain Imaging Data Exchange (ABIDE) from fMRI data
 
 ### 网络框图
 
-​                                                  
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GNN-About-Medical-Treatment/Disease%20prediction/images/1.png">              
 
 ### 未来工作
 
@@ -98,7 +98,7 @@ ABIDE准确率：69.5% （目前最高为66.8%） ；ADNI准确率：77%
 
 ### 网络框图
 
-   
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GNN-About-Medical-Treatment/Disease%20prediction/images/2.png">     
 
 ### 未来工作
 
@@ -202,6 +202,7 @@ GCN的平均Jacc：58:1 ± 3:1
 
 3.一个完整大脑皮层网格大概含有160万个节点，使用当前图卷积方法受限于GPU内存，可以考虑子采样降低网格分辨率或选择较小补丁进行处理
 
+
 ## 4-Multi-View Graph Convolutional Network and Its Applications on Neuroimage Analysis for Parkinson’s Disease
 
 ### 作者
@@ -258,11 +259,11 @@ PCA的ACU：0:6443±0:0223
 
 ### 网络框图
 
-   
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GNN-About-Medical-Treatment/Disease%20prediction/images/4-1.png"> 
 
 图一：MVGCN整体框架
 
-   
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GNN-About-Medical-Treatment/Disease%20prediction/images/4-2.png"> 
 
 图二：MVGCN部分流程
 
@@ -320,7 +321,7 @@ ABIDE数据集
 
 ### 网络框图
 
-   
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GNN-About-Medical-Treatment/Disease%20prediction/images/5.png"> 
 
 ### 未来工作
 
@@ -374,7 +375,7 @@ Anees Kazi, Shadi Albarqouni, Karsten Kortuem, Nassir Navab
 
 ### 网络框图
 
-   
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GNN-About-Medical-Treatment/Disease%20prediction/images/6.png">    
 
 ### 未来工作
 
