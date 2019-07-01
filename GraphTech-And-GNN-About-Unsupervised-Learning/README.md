@@ -316,29 +316,29 @@ SkipGram:其目的最大化出现在上下文的所有单词的概率以更新�
 
 ①利用邻接矩阵A(N×N)和度矩阵D(N×N)计算归一化拉普拉斯矩阵A~ 
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/10.png" width="100">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/10.png">
 
 ②利用特征矩阵X(N×D)和归一化拉普拉斯矩阵A~ 计算GCN(X,A)
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/11.png" width="300">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/11.png">
 
 ③计算均值向量矩阵µ
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/12.png" width="300">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/12.png">
 
 ④计算相似对数σ
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/13.png" width="300">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/13.png">
 
 ⑤随机生成潜在变量矩阵Z(N×F)并更新
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/14.png" width="300">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/14.png">
 
 （2）生成模型Generative model
 
 ①基于潜在变量矩阵Z更新邻接矩阵A
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/15.png" width="300">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/15.png">
 
 备注：σ(·)是logistic sigmoid 函数
 
@@ -346,7 +346,7 @@ SkipGram:其目的最大化出现在上下文的所有单词的概率以更新�
 
 ①VGAE：基于新的邻接矩阵A和特征矩阵X生成新的潜在变量矩阵Z（Embedding）
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/16.png" width="300">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/16.png">
 
 参数优化：阅读文献Learning部分
 
