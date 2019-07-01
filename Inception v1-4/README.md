@@ -84,7 +84,7 @@
 
 2.尝试将n×n的卷积核尺寸分解为1×n和n×1的卷积，例如3×3卷积等价于1×3卷积再3×1卷积，其发现计算成本降低了33%。
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/Inception%20v1-4/images/6.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Inception%20v1-4/images/6.png" width="500">
 
 即：5×5滤波器转为两个3×3，且再分解为3×1与1×3的重叠卷积。
 
