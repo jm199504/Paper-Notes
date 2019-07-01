@@ -9,3 +9,5 @@
 **4. Convolutional Neural Networks for Sentence Classification：基于CNN实现文本分类**
 
 **5. GraphTech-And-GNN-About-Unsupervised-Learning：基于图技术和图神经网络的无监督学习算法论文**
+
+**6. Paper-Robot：自动生成新论文**
