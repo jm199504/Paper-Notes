@@ -16,7 +16,7 @@
 
 **GoogLeNet即Inception的化身：**
 
-图1
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Inception%20v1-4/images/1.png">
 
 **动机/现存问题:**
 
@@ -34,11 +34,11 @@
 
 2.深度神经网络耗费大量计算资源，因此为了降低计算成本，考虑在3×3和5×5卷积前添加1×1的卷积层（①作为降维模块[在不损失模型特征表达能力的前提下减少模型参数(filter)降低模型复杂度]②提高网络表达能力），在不增加网络深度且不影响性能下增大网络宽度，注意：1×1卷积是在最大池化层的后一层。
 
-图2
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Inception%20v1-4/images/2.png">
 
 **GoogLeNet架构:**
 
-图3
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Inception%20v1-4/images/3.png">
 
 然深达20+层的神经网络难以避免梯度消失的问题，为了防止梯度消失，引入了辅助分类器，对其中2个Inception输出作softmax操作，在计算辅助损失时，总损失为辅助损失和真实损失的加权和，每个辅助损失权重为0.3，辅助损失仅用于训练，而推断过程不使用。
 
@@ -64,7 +64,7 @@
 
 **1.BN****实现tf.image.per_image_standardization()**
 
- 图4
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Inception%20v1-4/images/4.png">
 
 **Inception v3**
 
@@ -82,13 +82,13 @@
 
 1.将5×5的卷积分解为两个3×3的卷积运算以提升计算速度（使用5×5的卷积在计算成本上是3×3的2.78倍），所以使用叠加两个3×3卷积在实际性能上会有所提升。
 
-图5
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Inception%20v1-4/images/5.png">
 
 2.尝试将n×n的卷积核尺寸分解为1×n和n×1的卷积，例如3×3卷积等价于1×3卷积再3×1卷积，其发现计算成本降低了33%。
 
 即：5×5滤波器转为两个3×3，且再分解为3×1与1×3的重叠卷积。
 
-图7
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Inception%20v1-4/images/7.png">
 
 Inception v4
 
@@ -106,7 +106,7 @@ Inception v4
 
 1.将 Inception 架构和****残差连接(skip connect)****结合，经过实验证明，结合残差连接可以显著加速 Inception 的训练，尝试多种新型残差，显著提高了在 ILSVRC2012 分类任务挑战赛上的单帧识别性能
 
-图8
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Inception%20v1-4/images/8.png">
 
 
 
