@@ -172,7 +172,7 @@ See提出的结合参考注意力和记忆分布的覆盖损失函数：
 
 3.多头注意力机制multi-head attention
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/Paper-Robot/images/22.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Paper-Robot/images/22.jpeg">
 
 4.Graves和Schmidhuber提出的双向LSTM模型 bi-directional long short-term memory (LSTM) 
 
