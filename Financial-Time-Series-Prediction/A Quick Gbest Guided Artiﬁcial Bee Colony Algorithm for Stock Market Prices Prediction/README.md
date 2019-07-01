@@ -72,15 +72,15 @@ x是输入向量；b是偏置；f是激活函数，计算公式如下：
 
 2.2 异或问题：
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/Financial-Time-Series-Prediction/A%20Quick%20Gbest%20Guided%20Arti%EF%AC%81cial%20Bee%20Colony%20Algorithm%20for%20Stock%20Market%20Prices%20Prediction/images/6.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Financial-Time-Series-Prediction/A%20Quick%20Gbest%20Guided%20Arti%EF%AC%81cial%20Bee%20Colony%20Algorithm%20for%20Stock%20Market%20Prices%20Prediction/images/6.png" width="200">
 
 即：
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/Financial-Time-Series-Prediction/A%20Quick%20Gbest%20Guided%20Arti%EF%AC%81cial%20Bee%20Colony%20Algorithm%20for%20Stock%20Market%20Prices%20Prediction/images/7.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Financial-Time-Series-Prediction/A%20Quick%20Gbest%20Guided%20Arti%EF%AC%81cial%20Bee%20Colony%20Algorithm%20for%20Stock%20Market%20Prices%20Prediction/images/7.png" width="200">
 
 感知机可表示为超平面画一条分界线使其分类，因此无法分割。
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/Financial-Time-Series-Prediction/A%20Quick%20Gbest%20Guided%20Arti%EF%AC%81cial%20Bee%20Colony%20Algorithm%20for%20Stock%20Market%20Prices%20Prediction/images/8.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Financial-Time-Series-Prediction/A%20Quick%20Gbest%20Guided%20Arti%EF%AC%81cial%20Bee%20Colony%20Algorithm%20for%20Stock%20Market%20Prices%20Prediction/images/8.png" width="200">
 
 3.FFNN:Feed forward neural networks(前向反馈网络，神经元间完全相连）
 
