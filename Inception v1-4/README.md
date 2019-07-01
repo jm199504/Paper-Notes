@@ -8,7 +8,7 @@
 
 4. Inception[**V4**]: [Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning](https://arxiv.org/abs/1602.07261)
 
-##Inception v1/GoogLeNet
+##Inception v1/GoogLeNet##
 
 **2014年，Szegedy在《Going deeper with convolutions》论文中提出深度卷积神经网络 Inception，并基于该网络在 ILSVRC14 (大规模视觉识别竞赛)中达到了当时最好的分类和检测性能，其中提交的架构模型名为GoogLeNet，含一种22层网络的Inception的化身。**
 
