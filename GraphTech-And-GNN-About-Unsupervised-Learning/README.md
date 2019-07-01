@@ -2,8 +2,6 @@
 
 
 
-
-
 1.社区发现算法
 
 传统算法：CPM；LPA；Fast Unfolding；HANP；LFM；SLPA；BMLPA；COPRA
@@ -152,7 +150,7 @@
 
 数据集：BlogCatalog/Flickr/YouTube
 
-图1
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/1.png">
 
 相关知识：
 
@@ -170,11 +168,13 @@
 
 CBOW & Skip-Gram模型 ，而采用SkipGram
 
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/2.png">
+
 内容：基于NLP中word2vec思想运用到网络的节点表示中，对图中节点进行一串随机游走应用到网络的表示(随机游走序列)，节点类似于词向量，节点间游走类似于句子，从截断的随机游走序列中得到网络的局部信息，再通过局部信息来学习节点的潜在表示。
 
 模型流程：
 
-图3
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/3.png">
 
 算法：
 
@@ -182,17 +182,17 @@ CBOW & Skip-Gram模型 ，而采用SkipGram
 
 2-遍历所有的节点（SkipGram / Hierarchical Softmax（to speed the training time）/ Optimization(SGD and BP)）
 
-图4
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/4.png">
 
 其中t表示长度；γ为迭代次数；
 
 基于以下公式更新SkipGram算法：
 
-图5
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/5.png">
 
 SkipGram:其目的最大化出现在上下文的所有单词的概率以更新向量表示
 
-图6
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/6.png">
 
 其中Φ(vj)是对vj的向量表示
 
@@ -234,7 +234,7 @@ SkipGram:其目的最大化出现在上下文的所有单词的概率以更新�
 
 备注：计算特征值和特征向量
 
-图7
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/7.png">
 
 谱聚类算法的主要优点有：
 
@@ -270,7 +270,7 @@ SkipGram:其目的最大化出现在上下文的所有单词的概率以更新�
 
 论文举例：
 
-图8
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/8.png">
 
 一阶相似：
 
@@ -310,35 +310,35 @@ SkipGram:其目的最大化出现在上下文的所有单词的概率以更新�
 
 内容：模型分为2个子模型：（1）推理模型Inference model （2）生成模型Generative model  
 
-图9
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/9.png">
 
 推理模型Inference model ---- 2层GCN
 
 ①利用邻接矩阵A(N×N)和度矩阵D(N×N)计算归一化拉普拉斯矩阵A~ 
 
-图10
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/10.png">
 
 ②利用特征矩阵X(N×D)和归一化拉普拉斯矩阵A~ 计算GCN(X,A)
 
-图11
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/11.png">
 
 ③计算均值向量矩阵µ
 
-图12
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/12.png">
 
 ④计算相似对数σ
 
-图13
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/13.png">
 
 ⑤随机生成潜在变量矩阵Z(N×F)并更新
 
-图14
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/14.png">
 
 （2）生成模型Generative model
 
 ①基于潜在变量矩阵Z更新邻接矩阵A
 
-图15
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/15.png">
 
 备注：σ(·)是logistic sigmoid 函数
 
@@ -346,7 +346,7 @@ SkipGram:其目的最大化出现在上下文的所有单词的概率以更新�
 
 ①VGAE：基于新的邻接矩阵A和特征矩阵X生成新的潜在变量矩阵Z（Embedding）
 
-图16
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/16.png">
 
 参数优化：阅读文献Learning部分
 
@@ -362,49 +362,49 @@ SkipGram:其目的最大化出现在上下文的所有单词的概率以更新�
 
 内容：
 
-图17
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/17.png">
 
 目的：基于嵌入矩阵Z和节点信息矩阵X(node content matrix)---重构--->图A
 
- 谱卷积：
+谱卷积：
 
-图18
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/18.png">
 
 具体f函数：
 
-图19
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/19.png">
 
 其中：
 
-图20
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/20.png">
 
 Graph Encoder 2-versions:
 
-图21
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/21.png">
 
 Graph convolutional encoder:
 
-图22
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/22.png">
 
 Variational Graph Encoder:
 
-图23
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/23.png">
 
 Link prediction Layer:
 
-图24
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/24.png">
 
 Graph Autoencoder layer:
 
-图25
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/25.png">
 
 Adversarial Model cost：
 
-图26
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/26.png">
 
 Adversarial Graph Autoencoder Model
 
-图27
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/27.png">
 
 Baseline：
 
