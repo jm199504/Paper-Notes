@@ -8,11 +8,11 @@
 
 4. Inception[**V4**]: [Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning](https://arxiv.org/abs/1602.07261)
 
-##Inception v1/GoogLeNet##
+**Inception v1/GoogLeNet**
 
-**2014年，Szegedy在《Going deeper with convolutions》论文中提出深度卷积神经网络 Inception，并基于该网络在 ILSVRC14 (大规模视觉识别竞赛)中达到了当时最好的分类和检测性能，其中提交的架构模型名为GoogLeNet，含一种22层网络的Inception的化身。**
+2014年，Szegedy在《Going deeper with convolutions》论文中提出深度卷积神经网络 Inception，并基于该网络在 ILSVRC14 (大规模视觉识别竞赛)中达到了当时最好的分类和检测性能，其中提交的架构模型名为GoogLeNet，含一种22层网络的Inception的化身。
 
-**该架构的主要特点是改进了网络资源的利用率，该架构允许增加网络的深度和宽度，同时保持计算预算不变，为了优化质量，架构决策基于赫布（Hebbian）原则和多尺度处理。**
+该架构的主要特点是改进了网络资源的利用率，该架构允许增加网络的深度和宽度，同时保持计算预算不变，为了优化质量，架构决策基于赫布（Hebbian）原则和多尺度处理。
 
 **GoogLeNet即Inception的化身：**
 
@@ -46,13 +46,12 @@
 
 1.GoogLeNet有Deepconcat拼接层：tf.concat(3,[],[])
 
-2.****完整的 GoogLeNet 结构在传统的卷积层和池化层后面引入了 Inception 结构，对比 AlexNet 虽然网络层数增加，但是参数数量减少的原因是绝大部分的参数集中在全连接层，最终在ImageNet取得6.67%成绩。
+2.完整的 GoogLeNet 结构在传统的卷积层和池化层后面引入了 Inception 结构，对比 AlexNet 虽然网络层数增加，但是参数数量减少的原因是绝大部分的参数集中在全连接层，最终在ImageNet取得6.67%成绩。
 
  
+**Inception v2**
 
-##Inception v2
-
-**2015年，Ioffe在《Batch Normalization: Accelerating Deep Network Training byReducing Internal Covariate Shift》提出优化滤波器和Batch Normalization（正则化方法）。**
+2015年，Ioffe在《Batch Normalization: Accelerating Deep Network Training byReducing Internal Covariate Shift》提出优化滤波器和Batch Normalization（正则化方法）。
 
 **优化办法：**
 
@@ -62,12 +61,12 @@
 
 **补充：**
 
-**1.BN****实现tf.image.per_image_standardization()**
+1.BN实现tf.image.per_image_standardization()
 
 <img src="https://github.com/jm199504/Paper-Notes/blob/master/Inception%20v1-4/images/4.png">
 
-##Inception v3
 
+**Inception v3**
 
 作者探索扩展网络的方法，考虑使用适当的分解卷积和正则化，在ILSVRC 2012 分类任务挑战赛实现了单帧评估 21.2% top-1 和 5.6% top-5 误差率，且模型总参数不超过250万。
 
@@ -92,11 +91,9 @@
 <img src="https://github.com/jm199504/Paper-Notes/blob/master/Inception%20v1-4/images/7.png">
 
 
+**Inception v4**
 
-##Inception v4
-
-
-**2016年，《Inception-v4, Inception-ResNet andthe Impact of Residual Connections on Learning》**
+2016年，《Inception-v4, Inception-ResNet andthe Impact of Residual Connections on Learning》
 
 **动机：**
 
@@ -108,7 +105,6 @@
 1.将 Inception 架构和****残差连接(skip connect)****结合，经过实验证明，结合残差连接可以显著加速 Inception 的训练，尝试多种新型残差，显著提高了在 ILSVRC2012 分类任务挑战赛上的单帧识别性能
 
 <img src="https://github.com/jm199504/Paper-Notes/blob/master/Inception%20v1-4/images/8.png">
-
 
 
 **总结**
