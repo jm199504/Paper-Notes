@@ -1,3 +1,5 @@
+## A Quick Gbest Guided Artiﬁcial Bee Colony Algorithm for Stock Market Prices Prediction
+
 作者：Habib Shah 
 
 年份：2018
