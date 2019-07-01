@@ -316,7 +316,7 @@ SkipGram:其目的最大化出现在上下文的所有单词的概率以更新�
 
 ①利用邻接矩阵A(N×N)和度矩阵D(N×N)计算归一化拉普拉斯矩阵A~ 
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/10.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/10.png" width="300">
 
 ②利用特征矩阵X(N×D)和归一化拉普拉斯矩阵A~ 计算GCN(X,A)
 
