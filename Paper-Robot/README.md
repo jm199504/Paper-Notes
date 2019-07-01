@@ -1,4 +1,4 @@
-PaperRobot Incremental Draft Generation of Scientific Ideas——阅读笔记
+**PaperRobot Incremental Draft Generation of Scientific Ideas——阅读笔记**
 
 **论文目标：**
 
@@ -146,7 +146,6 @@ See提出的结合参考注意力和记忆分布的覆盖损失函数：
 
 6.重复删除：我们使用覆盖损失(基于覆盖机制)避免实体在引用输入和相关实体重复，并使用波束搜索生成输出值
 
- 
 
 **☆写新things-小结：**
 
@@ -165,9 +164,6 @@ See提出的结合参考注意力和记忆分布的覆盖损失函数：
 ⑦结合带有coverage loss的损失函数和集束搜索处理实体重复问题
 
  
-
- 
-
 **涉及方法/模型：**
 
 1.基于Wei at提出的 An entity mention extraction and linking system
@@ -203,4 +199,3 @@ See提出的结合参考注意力和记忆分布的覆盖损失函数：
 隐藏状态可以理解为神经网络的记忆，包含了先前的数据信息，例如LSTM中的ht
 
 <img src="https://github.com/jm199504/Paper-Notes/blob/master/Paper-Robot/images/23.png">
-
