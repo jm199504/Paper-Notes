@@ -198,4 +198,4 @@ See提出的结合参考注意力和记忆分布的覆盖损失函数：
 
 隐藏状态可以理解为神经网络的记忆，包含了先前的数据信息，例如LSTM中的ht
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/Paper-Robot/images/23.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Paper-Robot/images/23.png" width="600">
