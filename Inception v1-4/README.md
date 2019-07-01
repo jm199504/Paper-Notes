@@ -8,7 +8,7 @@
 
 4. Inception[**V4**]: [Inception-v4, Inception-ResNet and the Impact of Residual Connections on Learning](https://arxiv.org/abs/1602.07261)
 
-**Inception v1/GoogLeNet**
+##Inception v1/GoogLeNet
 
 **2014年，Szegedy在《Going deeper with convolutions》论文中提出深度卷积神经网络 Inception，并基于该网络在 ILSVRC14 (大规模视觉识别竞赛)中达到了当时最好的分类和检测性能，其中提交的架构模型名为GoogLeNet，含一种22层网络的Inception的化身。**
 
@@ -50,7 +50,7 @@
 
  
 
-**Inception v2**
+##Inception v2
 
 **2015年，Ioffe在《Batch Normalization: Accelerating Deep Network Training byReducing Internal Covariate Shift》提出优化滤波器和Batch Normalization（正则化方法）。**
 
@@ -66,8 +66,7 @@
 
 <img src="https://github.com/jm199504/Paper-Notes/blob/master/Inception%20v1-4/images/4.png">
 
-**Inception v3**
-
+##Inception v3
 
 
 作者探索扩展网络的方法，考虑使用适当的分解卷积和正则化，在ILSVRC 2012 分类任务挑战赛实现了单帧评估 21.2% top-1 和 5.6% top-5 误差率，且模型总参数不超过250万。
@@ -86,21 +85,23 @@
 
 2.尝试将n×n的卷积核尺寸分解为1×n和n×1的卷积，例如3×3卷积等价于1×3卷积再3×1卷积，其发现计算成本降低了33%。
 
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Inception%20v1-4/images/6.png">
+
 即：5×5滤波器转为两个3×3，且再分解为3×1与1×3的重叠卷积。
 
 <img src="https://github.com/jm199504/Paper-Notes/blob/master/Inception%20v1-4/images/7.png">
 
-Inception v4
+
+
+##Inception v4
+
 
 **2016年，《Inception-v4, Inception-ResNet andthe Impact of Residual Connections on Learning》**
-
- 
 
 **动机：**
 
 1.传统的网络架构中引入残差连接(即微软的残差网络ResNet)曾在 2015ILSVRC 挑战赛中获得当前最佳结果
 
- 
 
 **解决办法/尝试：**
 
