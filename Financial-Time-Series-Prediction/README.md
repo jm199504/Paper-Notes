@@ -14,4 +14,10 @@
 
 **7. Stocks Analysis and Prediction Using Big Data Analytics**
 
+**8. Stock Market Movement Prediction using LDA-Online Learning Model**
+
+**9. Classification Models for Stock’s Performance Prediction A Case Study of Finance Sector in the Thailand**
+
+**10. Stock Price Prediction Using Attention-based Multi-Input LSTM**
+
 ****
