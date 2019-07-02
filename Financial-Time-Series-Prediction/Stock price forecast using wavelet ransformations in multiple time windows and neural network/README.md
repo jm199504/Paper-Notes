@@ -24,7 +24,7 @@ A.APPLE股价2008.5-2018.5(2520交易日)
 
 输出数据集包括5个工作日（每周滑动）
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/Financial-Time-Series-Prediction/Stock%20price%20forecast%20using%20wavelet%20ransformations%20in%20multiple%20time%20windows%20and%20neural%20network/images/1.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Financial-Time-Series-Prediction/Stock%20price%20forecast%20using%20wavelet%20ransformations%20in%20multiple%20time%20windows%20and%20neural%20network/images/1.png" width="500">
 
 B. 方法
 
