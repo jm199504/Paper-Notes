@@ -29,7 +29,7 @@ LDA的主要目的是基于区间变量的线性组合来预测值。费雪线�
 
 PCA主成分分析是一种无监督的数据降维方法，降维的目标：将数据投影到方差最大的几个相互正交的方向上，以期待保留最多的样本信息，样本的方差越大表示样本的多样性越好，在训练模型的时候，我们当然希望数据的差别越大越好。否则即使样本很多但是他们彼此相似或者相同，提供的样本信息将相同，相当于只有很少的样本提供信息是有用的。样本信息不足将导致模型性能不够理想。
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/Financial-Time-Series-Prediction/Stock%20Market%20Movement%20Prediction%20using%20LDA-Online%20Learning%20Model/images/2.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Financial-Time-Series-Prediction/Stock%20Market%20Movement%20Prediction%20using%20LDA-Online%20Learning%20Model/images/2.png" width="500">
 
 如果同样选择使用PCA，选择方差最大的方向作为投影方向，来对数据进行降维。那么PCA选出的最佳投影方向，将是图中红色直线所示的方向，原因是PCA通常只能处理高斯分布的数据，而图中数据为双高斯分布。
 
