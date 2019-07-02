@@ -7,13 +7,7 @@
 
 出版：IEEE
 
-结论:
-
-1.新的计算特征[OC OH OL CH CL LH]
-
-2.计算MA & EMA
-
-3.LSTM模型预测
+结论: 新的数据特征[OC OH OL CH CL LH]
 
 方法流程：
 
