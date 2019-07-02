@@ -40,13 +40,13 @@ x是输入向量；b是偏置；f是激活函数，计算公式如下：
 
 <img src="https://github.com/jm199504/Paper-Notes/blob/master/Financial-Time-Series-Prediction/A%20Quick%20Gbest%20Guided%20Arti%EF%AC%81cial%20Bee%20Colony%20Algorithm%20for%20Stock%20Market%20Prices%20Prediction/images/5.png">
 
-1.1雇佣型蜜蜂和蜜源一一对应，根据Vij=xij+θ(xij-xkj)更新蜜源信息和确定蜜源数量
+1.1 雇佣型蜜蜂和蜜源一一对应，根据Vij=xij+θ(xij-xkj)更新蜜源信息和确定蜜源数量
 
-1.2旁观蜂根据雇佣蜂所提供的信息采用一定的选择策略(或依据概率，采用轮盘赌)选择蜜源，更新蜜源信息，同时确定蜜源的花蜜量
+1.2 旁观蜂根据雇佣蜂所提供的信息采用一定的选择策略(或依据概率，采用轮盘赌)选择蜜源，更新蜜源信息，同时确定蜜源的花蜜量
 
-1.3确定侦察蜂，并根据xid=xdmin+rand(0,1)(xjimax-xsjmin)寻找新蜜源
+1.3 确定侦察蜂，并根据xid=xdmin+rand(0,1)(xjimax-xsjmin)寻找新蜜源
 
-1.4记忆目前为止找到的最好的蜜源
+1.4 记忆目前为止找到的最好的蜜源
 
 总结：
 
