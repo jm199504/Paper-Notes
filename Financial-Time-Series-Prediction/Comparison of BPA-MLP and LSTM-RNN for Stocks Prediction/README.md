@@ -29,7 +29,7 @@ LSTM网络是一种特殊的RNN，具有学习长期依赖关系的能力。网�
 输入和输出门乘以单元格的输入和输出，而遗忘门乘以单元格的前一状态。
 门的激活函数通常是逻辑sigmoid函数，所以它介于0(门关闭)和1(门打开)之间。细胞输入或输出的激活函数通常是tanh或logistic sigmoid函数。
 
-图1
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Financial-Time-Series-Prediction/Comparison%20of%20BPA-MLP%20and%20LSTM-RNN%20for%20Stocks%20Prediction/images/1.png">
 
 F. Adam优化算法
 
@@ -55,7 +55,11 @@ Adam被证实其收敛性符合理论分析的预期，将Adam应用于多层神
 
 参考文献：
 [10] C. Saide, R. Lengelle, P. Honeine, C. Richar and R. Achkar, "Nonlinear adaptive filtering using kernel-based algorithms with dictionary adaptation. International Journal of Adaptive Control and Signal Processing," 2015.
+
 [11] G. A. Kassam and R. Achkar, LPR CNN Cascade and Adaptive Deskewing.
+
 [12] M. Owayjan, R. Achkar and M. Iskandar, "Face Detection with Expression Recognition using Artificial Neural Networks," Beirut, Lebanon, 3rd Middle East Conference on Biomedical Engineering (MECBME), October 2016, pp. 116-120. 
+
 [13] R. Achkar, M. ElHalabi, E. Bassil, R. Fakhro and M. Khalil, "Voice identity finder using the back propagation algorithm of an artificial neural network," 2016. 
+
 [14] Y. Harkouss, S. Mcheik and R. Achkar., "Accurate wavelet neural network for efficient controlling of an active magnetic bearing system," 2010. 
