@@ -1,3 +1,5 @@
+## Comparison of BPA-MLP and LSTM-RNN for Stocks Prediction
+
 作者：Roger Achkar
 
 年份：2018
@@ -29,7 +31,7 @@ LSTM网络是一种特殊的RNN，具有学习长期依赖关系的能力。网�
 输入和输出门乘以单元格的输入和输出，而遗忘门乘以单元格的前一状态。
 门的激活函数通常是逻辑sigmoid函数，所以它介于0(门关闭)和1(门打开)之间。细胞输入或输出的激活函数通常是tanh或logistic sigmoid函数。
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/Financial-Time-Series-Prediction/Comparison%20of%20BPA-MLP%20and%20LSTM-RNN%20for%20Stocks%20Prediction/images/1.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Financial-Time-Series-Prediction/Comparison%20of%20BPA-MLP%20and%20LSTM-RNN%20for%20Stocks%20Prediction/images/1.png" width="500">
 
 F. Adam优化算法
 
