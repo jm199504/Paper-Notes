@@ -1,4 +1,4 @@
-## Classification Models for Stock’s Performance Prediction A Case Study of Finance Sector in the Thailand
+## Classification Models for Stock’s Performance Prediction A Case Study of Finance Sector in the Thailand（暂未上传PDF）
 
 作者：Athit Phongmekin 
 
@@ -75,7 +75,11 @@ K近邻(KNN)是一种非参数分类器，其中，给定一组测试数据，KN
 <img src="https://github.com/jm199504/Paper-Notes/blob/master/Financial-Time-Series-Prediction/Classification%20Models%20for%20Stock%E2%80%99s%20Performance%20Prediction%20A%20Case%20Study%20of%20Finance%20Sector%20in%20the%20Thailand/images/2.png">
 
 [2] Hiral R. Patel, Satyen M. Parikh, and D. N. Darji, "Prediction model for stock market using news based different Classification, Regression and Statistical Techniques: (PMSMN)," presented at the 2016 International Conference on ICT in Business Industry & Government (ICTBIG) Indore, India, 2016.  
+
 [3] H. Alostad and H. Davulcu, "Directional prediction of stock prices using breaking news on Twitter," Web Intelligence, vol. 15, no. 1, pp. 1-17, 2017. 
+
 [4] Avijan Dutta, Gautam Bandopadhyay, and S. Sengupta, "Prediction of Stock Performance in the Indian Stock Market Using Logistic Regression," International Journal of Business and Information, vol. 7, no. 1, pp. 105-136, 2012. 
+
 [5] C.-F. Tsai and S.-P. Wang, "Stock Price Forecasting by Hybrid Machine Learning Techniques," in International MultiConference of Engineers and Computer Scientists, Hong Kong, 2009, vol. 1. 
+
 [8] Gabriela Mircea, Marilen Pirtea, Mihaela Neamtu, and S. Bazavan, "Discriminant analysis in a credit scoring model," presented at the Recent Advances in Applied and Biomedical Informatics and Computational Engineering in Systems Applications, Florence, 2011.
