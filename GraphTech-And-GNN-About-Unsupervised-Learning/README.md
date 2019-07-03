@@ -52,7 +52,58 @@
 
 代码：https://github.com/Ruiqi-Hu/ARGA
 
-社区发现数据集下载：
+**图技术相关论文调研**
+
+Graph Attention Networks
+
+主要内容：提出基于近邻节点注意力机制的网络模型graph attention networks (GATs)来解决图卷积方法和基于谱的神经网络（spectral-based graph neural networks）的缺陷，可用于处理复杂、不规则的计算图。
+
+Graph Partition Neural Networks for Semi-Supervised Classification
+
+主要内容：提出图分割神经网络（Graph Partition Neural Network，GPNN）可适用于快速处理大型图（extremely large graphs），其子图的节点间信息局部传播和子图间信息全局传播交替进行。
+
+代码：https://github.com/Microsoft/graph-partition-neural-networksamples
+
+Stochastic Training of Graph Convolutional Networks with Variance Reduction
+
+主要内容：提出基于控制变量算法（control variate based algorithms）的图卷积网络（GCN）可以有效减少感受野大小，收敛速度更快。传统GCN节点表示来源于其邻接点的迭代，使得感受野随着层数呈指数爆炸增长，前期尝试下采样减少其感受野大小却难以保证收敛，并且它们每个节点的感受野大小仍然数百。控制变量算法可对任何少的邻接点数量进行采样。
+
+Adaptive Graph Convolutional Neural Networks
+
+主要内容：提出自适应图卷积神经网络 （Adaptive Graph Convolutional Neural Networks，AGCN）可接收任意图结构和规模的图作为输入，图在训练过程中可以学到相应的自适应图，其收敛速度和预测精准度均有提升。
+
+Adversarial Attacks on Neural Networks for Graph Data
+
+主要内容：提出了针对图深度学习模型的对抗攻击方法，是首个在属性图（attributed graphs）上的对抗攻击研究，为了应对潜在的离散域还提出了一种利用增量计算的高效算法 Nettack。
+
+Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition
+
+主要内容：提出了一种时空图卷积网络（SpatialTemporal Graph Convolutional Networks (ST-GCN)）捕获数据中的时空模式，使模型更强的表达能力和泛化能力。
+
+Learning Human-Object Interactions by Graph Parsing Neural Networks
+
+主要内容：提出图解析神经网络（Graph Parsing Neural Network，GPNN），用于检测和识别图像和视频中人-物交互（human-object interactions (HOI)）的任务。
+
+GPNN推断出包含的解析图：邻接矩阵的HOI图结构+节点标签组成。
+
+GPNN会迭代计算邻接矩阵和节点标签。
+
+Graph Convolution over Pruned Dependency Trees Improves Relation Extraction
+
+主要内容：提出一种用于关系提取的图搜索神经网络（Graph Search Neural Network (GSNN)），通过知识图获取结构化的先验知识作为额外信息来提升图像分类效果。
+
+**应用场景：**
+molecular data
+point could
+social networks
+
+**公开数据集：**
+1）The Cora
+2）Citeseer
+3）Pubmed citation network datasets
+4）A protein-protein interaction dataset
+
+**社区发现数据集下载：**
 
 **基于链接分析的数据集**
 
