@@ -82,11 +82,11 @@ Dolphin 数据集是 D.Lusseau 等人使用长达 7 年的时间观察新西兰 
 
 链接：<http://www-personal.umich.edu/~mejn/netdata/polblogs.zip>
 
-基于链接与文本型属性的数据集
+**基于链接与文本型属性的数据集**
 
 （1）Enron Email Dataset
 
-这个数据集是由CALO项目(一个学习和组织的认知助手)收集和准备的。它包含了大约150名用户的数据，其中大部分是安然的高级管理人员，这些数据被组织到[7]文件夹中。
+该数据集是由CALO项目(一个学习和组织的认知助手)收集和准备的。它包含了大约150名用户的数据，其中大部分是安然的高级管理人员，这些数据被组织到[7]文件夹中。
 
 链接：<http://www.cs.cmu.edu/~enron/enron_mail_20150507.tgz>
 
@@ -102,15 +102,11 @@ WebKB数据集包含877种科学出版物，分为5类。引文网络由1608个�
 
 链接：<http://www.cs.umd.edu/~sen/lbc-proj/data/WebKB.tgz>
 
-（4）Terrorists
+（4）Terrorists & Terrorist Attacks
 
-恐怖袭击数据集
+第2个数据集包括1293起恐怖袭击，每起袭击都有6个标签，每个标签表示袭击的类型。每个攻击都由一个0/1值的属性向量描述，其条目表示某个特性的不存在。共有106个不同的特征。数据集中的文件可用于创建两个不同的图。数据集中的README文件提供了更多细节。
 
 链接：<http://www.cs.umd.edu/~sen/lbc-proj/data/TerroristRel.tgz>
-
-（5）Terrorist Attacks
-
-该数据集包括1293起恐怖袭击，每起袭击都有6个标签，每个标签表示袭击的类型。每个攻击都由一个0/1值的属性向量描述，其条目表示某个特性的不存在。共有106个不同的特征。数据集中的文件可用于创建两个不同的图。数据集中的README文件提供了更多细节。
 
 链接：<http://www.cs.umd.edu/~sen/lbc-proj/data/TerrorAttack.tgz>
 
