@@ -54,9 +54,9 @@
 
 社区发现简单归纳：
 
-No Algorithm 时间 类别
+| No | Algorithm | 时间 | 类别
 
-1 CPM（Cluster Percolation method） 2005 重叠社区
+| 1 | CPM（Cluster Percolation method） | 2005 | 重叠社区
 
 2 LAP（Label propagation algorithm） 2007 非重叠
 
