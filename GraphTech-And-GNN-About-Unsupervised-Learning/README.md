@@ -54,25 +54,17 @@
 
 社区发现简单归纳：
 
-| No | Algorithm | 时间 | 类别| 
-
-| 1 | CPM（Cluster Percolation method） | 2005 | 重叠社区| 
-
-2 LAP（Label propagation algorithm） 2007 非重叠
-
-3 Fast Unfolding 2008 非重叠
-
-4 HANP（Hop Attenuation & Node Preference） 2009 非重叠
-
-5 LFM（Latent factor model） 2009 重叠社区
-
-6 SPLA（Speak-listener Label propagation algorithm） 2011 重叠社区
-
-7 BMLPA（Balanced Multi-label propagation algorithm） 2013 非重叠
-
-8 COPRA - 重叠社区
-
-9 GN（Girvan-Newman） - 非重叠
+| No   | Algorithm                                             | 时间 | 类别     |
+| ---- | ----------------------------------------------------- | ---- | -------- |
+| 1    | CPM（Cluster   Percolation method）                   | 2005 | 重叠社区 |
+| 2    | LAP（Label   propagation algorithm）                  | 2007 | 非重叠   |
+| 3    | Fast Unfolding                                        | 2008 | 非重叠   |
+| 4    | HANP（Hop   Attenuation & Node Preference）           | 2009 | 非重叠   |
+| 5    | LFM（Latent   factor model）                          | 2009 | 重叠社区 |
+| 6    | SPLA（Speak-listener   Label propagation algorithm）  | 2011 | 重叠社区 |
+| 7    | BMLPA（Balanced   Multi-label propagation algorithm） | 2013 | 非重叠   |
+| 8    | COPRA                                                 | -    | 重叠社区 |
+| 9    | GN（Girvan-Newman）                                   | -    | 非重叠   |
 
 **图技术相关论文调研**
 
