@@ -52,15 +52,15 @@
 
 代码：https://github.com/Ruiqi-Hu/ARGA
 
-社区发现数据集下载：
+	•社区发现数据集下载：
 
-（1）Zachary karate club
+	•（1）Zachary karate club
 
-Zachary 网络是通过对一个美国大学空手道俱乐部进行观测而构建出的一个社会网络.网络包含 34 个节点和 78 条边,其中个体表示俱乐部中的成员,而边表示成员之间存在的友谊关系.空手道俱乐部网络已经成为复杂网络社区结构探测中的一个经典问题[1]。
+	•Zachary 网络是通过对一个美国大学空手道俱乐部进行观测而构建出的一个社会网络.网络包含 34 个节点和 78 条边,其中个体表示俱乐部中的成员,而边表示成员之间存在的友谊关系.空手道俱乐部网络已经成为复杂网络社区结构探测中的一个经典问题[1]。
 
-链接：<http://www-personal.umich.edu/~mejn/netdata/karate.zip>
+	•链接：<http://www-personal.umich.edu/~mejn/netdata/karate.zip>
 
-（2）
+	•（2）
 
 
 **调研细节**
