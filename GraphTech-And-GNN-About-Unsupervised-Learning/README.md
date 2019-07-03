@@ -54,13 +54,79 @@
 
 	•社区发现数据集下载：
 
+	•**基于链接分析的数据集**
+
 	•（1）Zachary karate club
 
 	•Zachary 网络是通过对一个美国大学空手道俱乐部进行观测而构建出的一个社会网络.网络包含 34 个节点和 78 条边,其中个体表示俱乐部中的成员,而边表示成员之间存在的友谊关系.空手道俱乐部网络已经成为复杂网络社区结构探测中的一个经典问题[1]。
 
 	•链接：<http://www-personal.umich.edu/~mejn/netdata/karate.zip>
 
-	•（2）
+	•（2）College Football 
+	•College Football 网络. Newman 根据美国大学生足球联赛而创建的一个复杂的社会网络.该网络包含 115个节点和 616 条边,其中网络中的结点代表足球队,两个结点之间的边表示两只球队之间进行过一场比赛.参赛的115支大学生代表队被分为12个联盟。比赛的流程是联盟内部的球队先进行小组赛,然后再是联盟之间球队的比赛。这表明联盟内部的球队之间进行的比赛次数多于联盟之间的球队之间进行的比赛的次数.联盟即可表示为该网络的真实社区结构[2]。
+
+	•链接：<http://www-personal.umich.edu/~mejn/netdata/football.zip>
+
+	•（3）Dolphin
+	•Dolphin 数据集是 D.Lusseau 等人使用长达 7 年的时间观察新西兰 Doubtful Sound海峡 62 只海豚群体的交流情况而得到的海豚社会关系网络。这个网络具有 62 个节点，159 条边。节点表示海豚，而边表示海豚间的频繁接触[3]。
+
+	•链接：<http://www-personal.umich.edu/~mejn/netdata/dolphins.zip>
+
+	•**基于链接与离散型属性的数据集**
+
+	•（1）Political blogs
+
+	•该数据集由Lada Adamic于2005年编译完成， 表示博客的政治倾向。 包含1490个结点和19090条边。数据集中的每个结点都有一个属性描述（用0或者1表示），表示民主或者保守[4] 。
+
+	•链接：<http://www-personal.umich.edu/~mejn/netdata/polblogs.zip>
+
+	•基于链接与文本型属性的数据集
+
+	•（1）Enron Email Dataset
+
+	•这个数据集是由CALO项目(一个学习和组织的认知助手)收集和准备的。它包含了大约150名用户的数据，其中大部分是安然的高级管理人员，这些数据被组织到[7]文件夹中。
+
+	•链接：<http://www.cs.cmu.edu/~enron/enron_mail_20150507.tgz>
+
+	•（2）Cora
+
+	•Cora数据集由2708份科学出版物组成，共分为7类。引文网络由5429个链接组成。数据集中的每个发布都由一个0/1值的单词向量描述，该向量表示字典中对应单词的缺失/存在。这本词典由1433个独特的单词组成。数据集中的README文件提供了更多的细节[8]。
+
+	•链接：<http://www.cs.umd.edu/~sen/lbc-proj/data/cora.tgz>
+
+	•（3）WebKB
+
+	•WebKB数据集包含877种科学出版物，分为5类。引文网络由1608个链接组成。数据集中的每个发布都由一个0/1值的单词向量描述，该向量表示字典中对应单词的缺失/存在。这部词典由1703个独特的单词组成。数据集中的README文件提供了更多的细节[9]。
+
+	•链接：<http://www.cs.umd.edu/~sen/lbc-proj/data/WebKB.tgz>
+
+	•（4）Terrorists
+
+	•恐怖袭击数据集
+
+	•链接：<http://www.cs.umd.edu/~sen/lbc-proj/data/TerroristRel.tgz>
+
+	•（5）Terrorist Attacks
+
+	•该数据集包括1293起恐怖袭击，每起袭击都有6个标签，每个标签表示袭击的类型。每个攻击都由一个0/1值的属性向量描述，其条目表示某个特性的不存在。共有106个不同的特征。数据集中的文件可用于创建两个不同的图。数据集中的README文件提供了更多细节。
+
+	•链接：<http://www.cs.umd.edu/~sen/lbc-proj/data/TerrorAttack.tgz>
+
+	•**斯坦福大型网络数据集收集**
+
+	•链接：<http://snap.stanford.edu/data/>
+
+	•**社交网络信息分析**
+
+	•KDD Cup Dataset：<http://www.cs.cornell.edu/projects/kddcup/datasets.html>
+
+	•Stack Overflow Data：<http://blog.stackoverflow.com/2009/06/stack-overflow-creative-commons-data-dump/>
+
+	•Youtube dataset：<http://netsg.cs.sfu.ca/youtubedata/>
+
+	•Amazon Data：<http://snap.stanford.edu/data/amazon-meta.html>
+
+
 
 
 **调研细节**
@@ -427,4 +493,28 @@ Baseline：
 
 6. TADW [Yang et al., 2015] applies matrix factorization for network representation learning.
 
- 
+数据集参考文献：
+
+[1]: W. W. Zachary, An information flow model for conflict and fission in small groups, Journal of Anthropological Research 33, 452-473 (1977) 
+
+[2]: M. Girvan and M. E. J. Newman, Proc. Natl. Acad. Sci. USA 99, 7821-7826 (2002). 
+
+[3]: V.Lusseau, K .Schneider, OJ .Boisseau et al. The Bottlenose Dolphin Community of Doubtful Sound Features a Large Proportion of Long-Lasting Associations. Behavioral Ecology and Sociobiology, 2003, 54(4):392-405 
+
+[4]: L. A. Adamic and N. Glance, “The political blogosphere and the 2004 US Election”, in Proceedings of the WWW-2005 Workshop on the Weblogging Ecosystem (2005) 
+
+[5]: Zhou Y, Cheng H, Yu J X. Clustering large attributed graphs: An efficient incremental approach[C]//Data Mining (ICDM), 2010 IEEE 10th International Conference on. IEEE, 2010: 689-698. 
+
+[6]: Zhou Y, Cheng H, Yu J X. Graph clustering based on structural/attribute similarities[J]. Proceedings of the VLDB Endowment, 2009, 2(1): 718-729. 
+
+[7]: Klimt B, Yang Y. Introducing the Enron Corpus[C]//CEAS. 2004. 
+
+[8]: Yang T, Jin R, Chi Y, et al. Combining link and content for community detection: a discriminative approach[C]//Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining. ACM, 2009: 927-936. 
+
+[9]: Lu Q, Getoor L. Link-based classification[C]//ICML. 2003, 3: 496-503. 
+
+[10]: Dang T A, Viennet E. Community detection based on structural and attribute similarities[C]//International Conference on Digital Society (ICDS). 2012: 7-12. 
+
+[11]: Xirong Li, Cees G.M. Snoek, and Marcel Worring, Learning Social Tag Relevance by Neighbor Voting, in IEEE Transactions on Multimedia (T-MM), 2009 
+
+[12]: Newman M E J. Finding community structure in networks using the eigenvectors of matrices[J]. Physical review E, 2006, 74(3): 036104.
