@@ -4,7 +4,7 @@
 
 **2. 3D Inception：3D Inception（医疗健康方向）**
 
-**3. Inception v1-4：Inception（卷积神经网络模型）优化历程**
+**3. Inception v1-4：Inception（卷积神经网络模型）Google大佬们的优化历程**
 
 **4. Convolutional Neural Networks for Sentence Classification：基于CNN实现文本分类**
 
