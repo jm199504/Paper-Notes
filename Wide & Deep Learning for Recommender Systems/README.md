@@ -3,12 +3,19 @@
 应用领域：推荐系统
 
 调研学习：
+
 	1. 推荐系统主要分为两个部分：
+	
 	检索系统(Retrieval)和排序系统(Ranking)。
+	
 	2. memorization & generalization：
+	
 	推荐系统重要问题之一，解决memorization（记忆）和generalization（归纳/泛化）。
+	
 	memorization主要是基于历史数据学习频繁共同出现的item，并且探索他们之间的相关性，由wide作为主导；
+	
 	generalization主要是基于相关性之间的传递， 发现新的特征的组合，由deep作为主导。
+	
 	3. Wide model主要采用逻辑回归，且特征一般为分类值(categorical)，通常二值且稀疏，用one-hot编码（对于连续值可以考虑使用Bucketization（桶化），将连续值分组看待）；Deep model采用神经网络，特征为连续值(continuous)，通常会归一化到[0,1]，激活函数通常为ReLu。
 	
 摘要：具有非线性特征转换的广义线性模型被应用于具有稀疏输入的回归/分类问题， 当特征工程较少特征时，深度神经网络通过对稀疏特征的低维稠密嵌入学习组合能较好地挖掘隐含特征。然而，当用户与项目之间的交互是稀疏的、高秩的时，带有嵌入式的深度神经网络不建议使用。
@@ -20,7 +27,8 @@
 主要贡献：
 
 1.Wide & Deep learning 模型联合前馈神经神经和特征转换的线性模型实现稀疏特征的通用的推荐系统。
- 2.Wide  &Deep Learning 推荐系统用于GooglePlay移动端应用商店（十亿活跃用户和百万应用）。
+
+2.Wide  &Deep Learning 推荐系统用于GooglePlay移动端应用商店（十亿活跃用户和百万应用）。
 
 3.开源基于TensorFlow的API（详情查看：http://tensorflow.org）
 
@@ -29,15 +37,18 @@
 <img src="https://github.com/jm199504/Paper-Notes/blob/master/Wide%20%26%20Deep%20Learning%20for%20Recommender%20Systems/images/2.png" width="500">
 
 推荐系统具体细节：
+
 用户特征（User features）：country, language, demographics
+
 上下文特征（Contextual features）：device, hour of the day, day of the week
+
 印象特征（Impression features）：app age, historical statistics of an app
 
 模型细节：
+
 1.Wide组件：图1左侧，需要对离散特征进行交叉积变换（cross-product transformation）：
 
 <img src="https://github.com/jm199504/Paper-Notes/blob/master/Wide%20%26%20Deep%20Learning%20for%20Recommender%20Systems/images/3.png">
-
 
 其中 x = [x1; x2; …; xd] 表示含有d个特征的向量，[w1; w2;…; wd]是模型参数，模型通常训练 one-hot 编码后的二值特征，cki是布尔值变量，φk是第k次变换，对于二分类特征，交叉积变换：例如gender=female & language=en为1，其余均为0，该变换可以捕获二元特征间相互作用，为广义线性模型增加了非线性，但是对于在训练集里没有出现过的 query-item pair，该交叉积变换不会归纳出训练集中未出现的特征对。
 
