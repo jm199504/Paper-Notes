@@ -26,7 +26,7 @@
 
 推荐系统流程一览：
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/Wide%20%26%20Deep%20Learning%20for%20Recommender%20Systems/images/2.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Wide%20%26%20Deep%20Learning%20for%20Recommender%20Systems/images/2.png" width="500">
 
 推荐系统具体细节：
 用户特征（User features）：country, language, demographics
@@ -65,7 +65,7 @@ Mini-batch论文：《Efficient Mini-batch Training for Stochastic Optimization�
 
 论文模型具体流程和函数使用：
 
-<img src="https://github.com/jm199504/Paper-Notes/blob/master/Wide%20%26%20Deep%20Learning%20for%20Recommender%20Systems/images/6.png">
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Wide%20%26%20Deep%20Learning%20for%20Recommender%20Systems/images/6.png" width="500">
 
 具体描述：在Deep模型，使用32维度embedding向量学习每一个分类特征，拼接（concatenate）所有embedding后大约1200维度，再投入3层ReLu层，最后使用logistic loss优化模型参数，5千亿的数据样本，且时刻会有新的训练数据产生，而模型需要再训练，然而再训练是十分消耗计算资源和耽误时间，为解决该问题，Google大佬们实现了热启动系统初始化带有embedding和线性模型权重的新模型（基于之前的模型）。
 
