@@ -14,4 +14,4 @@
 
 **7. Financial-Time-Series-Prediction：金融时间序列预测**
 
-**8. Wide & Deep Learning for Recommender Systems：Google Player推荐系统**
+**8. Wide & Deep Learning for Recommender Systems：Google Player 推荐系统**
