@@ -88,7 +88,7 @@ Mini-batch论文：《Efficient Mini-batch Training for Stochastic Optimization�
 
 记忆和归纳对推荐系统都十分重要，其中Wide模型可以通过交叉积特征转换（cross-product feature transformations）有效地记忆稀疏特征的交互，而Deep模型（深度神经网络）可以通过低维嵌入归纳到未可见的特征交互，该模型集成了Wide和Deep模型的优势，通过对大型商业应用Google Play的推荐系统框架进行了应用和评估，在线实验结果表明该模型优于Wide模型和Deep模型。
 
-Wide & Deep 和 Deep & Cross 及tensorflow实现：https://blog.csdn.net/yujianmin1990/article/details/78989099
+Wide & Deep Tensorflow实现：https://github.com/tensorflow/models/tree/master/official/wide_deep
 
 **个人总结：**
 
