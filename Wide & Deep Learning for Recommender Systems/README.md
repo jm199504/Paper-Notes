@@ -4,11 +4,11 @@
 
 调研学习：
 
-1. 推荐系统主要分为两个部分：
+1.推荐系统主要分为两个部分：
 	
 检索系统(Retrieval)和排序系统(Ranking)。
 	
-2. memorization & generalization：
+2.memorization & generalization：
 	
 推荐系统重要问题之一，解决memorization（记忆）和generalization（归纳/泛化）。
 	
@@ -16,7 +16,7 @@ memorization主要是基于历史数据学习频繁共同出现的item，并且�
 	
 generalization主要是基于相关性之间的传递， 发现新的特征的组合，由deep作为主导。
 	
-3. Wide model主要采用逻辑回归，且特征一般为分类值(categorical)，通常二值且稀疏，用one-hot编码（对于连续值可以考虑使用Bucketization（桶化），将连续值分组看待）；Deep model采用神经网络，特征为连续值(continuous)，通常会归一化到[0,1]，激活函数通常为ReLu。
+3.Wide model主要采用逻辑回归，且特征一般为分类值(categorical)，通常二值且稀疏，用one-hot编码（对于连续值可以考虑使用Bucketization（桶化），将连续值分组看待）；Deep model采用神经网络，特征为连续值(continuous)，通常会归一化到[0,1]，激活函数通常为ReLu。
 	
 摘要：具有非线性特征转换的广义线性模型被应用于具有稀疏输入的回归/分类问题， 当特征工程较少特征时，深度神经网络通过对稀疏特征的低维稠密嵌入学习组合能较好地挖掘隐含特征。然而，当用户与项目之间的交互是稀疏的、高秩的时，带有嵌入式的深度神经网络不建议使用。
 
