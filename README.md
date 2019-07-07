@@ -13,3 +13,5 @@
 **6. Paper-Robot：自动生成新论文**
 
 **7. Financial-Time-Series-Prediction：金融时间序列预测**
+
+**8. Wide & Deep Learning for Recommender Systems：Google Player推荐系统**
