@@ -15,7 +15,7 @@
 
 在本文中，我们提出了Wide & Deep Learning 模型，联合线性模型和深度神经网络将记忆和归纳的优点结合，并应用于推荐系统，正如下图所示：
 
-图1
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Wide%20%26%20Deep%20Learning%20for%20Recommender%20Systems/images/1.png">
 
 主要贡献：
 
@@ -26,7 +26,7 @@
 
 推荐系统流程一览：
 
-图2
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Wide%20%26%20Deep%20Learning%20for%20Recommender%20Systems/images/2.png">
 
 推荐系统具体细节：
 用户特征（User features）：country, language, demographics
@@ -36,13 +36,14 @@
 模型细节：
 1.Wide组件：图1左侧，需要对离散特征进行交叉积变换（cross-product transformation）：
 
-图3
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Wide%20%26%20Deep%20Learning%20for%20Recommender%20Systems/images/3.png">
+
 
 其中 x = [x1; x2; …; xd] 表示含有d个特征的向量，[w1; w2;…; wd]是模型参数，模型通常训练 one-hot 编码后的二值特征，cki是布尔值变量，φk是第k次变换，对于二分类特征，交叉积变换：例如gender=female & language=en为1，其余均为0，该变换可以捕获二元特征间相互作用，为广义线性模型增加了非线性，但是对于在训练集里没有出现过的 query-item pair，该交叉积变换不会归纳出训练集中未出现的特征对。
 
 2.Deep组件：图1中右侧，前馈神经网络，通常会将特征embedding到10-100维，再投入隐藏层中，该Deep用于探索新的特征组合，提高推荐系统的多样性，或提升模型泛化能力，但是query-item matrix 非常稀疏，很难学习，然而 dense embedding 的方法还是可以得到对所有 query-item pair 非零的预测，这就会导致 over-generalize，推荐相关弱的物品：
 
-图4
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Wide%20%26%20Deep%20Learning%20for%20Recommender%20Systems/images/4.png">
 
 3.Joint Training Wide & Deep Model：结合Wide和Deep，使用加权求和方式输出预测值，通常再使用逻辑损失(Logistic Loss)映射。(插语：联合学习和集成学习不同，集成学习是独立训练即互不了解，而联合学习是同时训练即模型参数是同时被更新的)，其中Wide模型的少量交叉积可以弥补Deep模型的缺陷（无需全量Wide模型）。
 
@@ -58,13 +59,13 @@ Mini-batch论文：《Efficient Mini-batch Training for Stochastic Optimization�
 
 模型输出公式：
 
-图5
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Wide%20%26%20Deep%20Learning%20for%20Recommender%20Systems/images/5.png">
 
 其中Y表示二元标签，σ(·)是sigmoid函数， φ(x) 是交叉积转换（cross product transformations），b是偏置项（bias），W(wide)为Wide模型权重，W(deep)为Deep模型权重，
 
 论文模型具体流程和函数使用：
 
-图6
+<img src="https://github.com/jm199504/Paper-Notes/blob/master/Wide%20%26%20Deep%20Learning%20for%20Recommender%20Systems/images/6.png">
 
 具体描述：在Deep模型，使用32维度embedding向量学习每一个分类特征，拼接（concatenate）所有embedding后大约1200维度，再投入3层ReLu层，最后使用logistic loss优化模型参数，5千亿的数据样本，且时刻会有新的训练数据产生，而模型需要再训练，然而再训练是十分消耗计算资源和耽误时间，为解决该问题，Google大佬们实现了热启动系统初始化带有embedding和线性模型权重的新模型（基于之前的模型）。
 
