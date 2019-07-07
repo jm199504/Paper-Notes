@@ -64,7 +64,7 @@ generalization主要是基于相关性之间的传递， 发现新的特征的�
 
 训练方式：Mini-batch stochastic optimization
 
-FTRL论文：https://www.semanticscholar.org/paper/7bdf20d18b5a9411d729a0736c6a3a9a4b52bf4f?p2df
+FTRL论文：《Follow-the-Regularized-Leader and Mirror Descent Equivalence Theorems and L1 Regularization》
 
 AdaGrad论文：《Adaptive Subgradient Methods for Online Learning and Stochastic Optimization∗》
 
