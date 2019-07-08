@@ -48,12 +48,15 @@
 
 **5. GraphTech-And-GNN-About-Unsupervised-Learning：基于图技术和图神经网络的无监督学习算法**
 
-1.社区发现常见算法
+1.Community Detection - Common Algorithm
 
-2.数据集
+2.Related DataSet
+
+3.Spectral Clustering
+
+4.GCN/GAE
 
 **6. Paper-Robot：自动生成新论文**
-
 
 **7. Financial-Time-Series-Prediction：金融时间序列预测**
 
@@ -78,5 +81,3 @@
 10.Stock Price Prediction Using Attention-based Multi-Input LSTM
 
 **8. Wide & Deep Learning for Recommender Systems：Google Player 推荐系统**
-
-
