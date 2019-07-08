@@ -2,19 +2,19 @@
 
 **1. GNN-About-Medical-Treatment ：图神经网络（医疗健康方向）**
 
-1. Disease prediction：疾病监测
+1.Disease prediction：疾病监测
 
-1.1 Distance Metric Learning using Graph Convolutional Networks : Application to Functional Brain Networks
+1.1Distance Metric Learning using Graph Convolutional Networks : Application to Functional Brain Networks
 
-1.2 Spectral Graph Convolutions for Population-based Disease Prediction
+1.2Spectral Graph Convolutions for Population-based Disease Prediction
 
-1.3 Convolutional neural networks for mesh-based parcellation of the cerebral cortex
+1.3Convolutional neural networks for mesh-based parcellation of the cerebral cortex
 
-1.4 Multi-View Graph Convolutional Network and Its Applications on Neuroimage Analysis for Parkinson’s Disease
+1.4Multi-View Graph Convolutional Network and Its Applications on Neuroimage Analysis for Parkinson’s Disease
 
-1.5 Bootstrapping Graph Convolutional Neural Networks for Autism Spectrum Disorder Classification
+1.5Bootstrapping Graph Convolutional Neural Networks for Autism Spectrum Disorder Classification
 
-1.6 Multi Layered-Parallel Graph Convolutional Network (ML-PGCN) for Disease Prediction
+1.6Multi Layered-Parallel Graph Convolutional Network (ML-PGCN) for Disease Prediction
 
 2. Imaging：成像检查
 
