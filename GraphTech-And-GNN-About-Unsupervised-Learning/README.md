@@ -455,7 +455,7 @@ SkipGram:其目的最大化出现在上下文的所有单词的概率以更新�
 
 <img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/11.png">
 
-③计算均值向量矩阵µ
+③计算均值向量矩阵µ 
 
 <img src="https://github.com/jm199504/Paper-Notes/blob/master/GraphTech-And-GNN-About-Unsupervised-Learning/images/12.png">
 
