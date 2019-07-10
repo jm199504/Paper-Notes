@@ -4,7 +4,7 @@
 
 #### 1.Disease prediction：疾病监测
 
-1.1Distance Metric Learning using Graph Convolutional Networks : Application to Functional Brain Networks
+##### 1.1Distance Metric Learning using Graph Convolutional Networks : Application to Functional Brain Networks
 
 1.2Spectral Graph Convolutions for Population-based Disease Prediction
 
