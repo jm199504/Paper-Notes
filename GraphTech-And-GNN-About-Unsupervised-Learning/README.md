@@ -115,15 +115,12 @@ Graph Convolution over Pruned Dependency Trees Improves Relation Extraction
 主要内容：提出一种用于关系提取的图搜索神经网络（Graph Search Neural Network (GSNN)），通过知识图获取结构化的先验知识作为额外信息来提升图像分类效果。
 
 **应用场景：**
-molecular data
-point could
-social networks
 
-**公开数据集：**
-1）The Cora
-2）Citeseer
-3）Pubmed citation network datasets
-4）A protein-protein interaction dataset
+molecular data
+
+point could
+
+social networks
 
 **社区发现数据集下载：**
 
@@ -196,6 +193,16 @@ Stack Overflow Data：<http://blog.stackoverflow.com/2009/06/stack-overflow-crea
 Youtube dataset：<http://netsg.cs.sfu.ca/youtubedata/>
 
 Amazon Data：<http://snap.stanford.edu/data/amazon-meta.html>
+
+**其他公开数据集：**
+
+1）The Cora
+
+2）Citeseer
+
+3）Pubmed citation network datasets
+
+4）A protein-protein interaction dataset
 
 **调研细节**
 
@@ -561,7 +568,61 @@ Baseline：
 
 6. TADW [Yang et al., 2015] applies matrix factorization for network representation learning.
 
-数据集参考文献：
+附：
+**路径寻找**
+1.经典算法
+>搜索（DFS、BFS）
+>
+>最短路（Dijkstra、Floyd）
+>
+>最小生成树（Boruvka）
+>
+>进阶算法
+>
+>搜索（词典排序广搜、迭代深化深搜）
+>
+>最短路（A*启发式搜索、Yen's的K条最短路）
+>
+>最小生成树（Kruskal、Prime、Chu-Liu/Edmonds）
+
+2.应用场景
+>文件搜索
+>
+>GPS最优路径
+>
+>IP路由规划
+>
+>管道铺设
+>
+>其他高层图算法的基础
+>
+>任务分配与项目选择
+
+**中心度衡量**
+1.经典算法
+>度中心度（点的度数越大越重要）
+>
+>接近中心度（到其他点距离越近越重要-距离衡量）
+>
+>中介中心度（作为其他点间的中心节点-缺失对其他节点最短路径的影响程度）
+>
+>特征向量中心度（全局性的中心度-周边节点构建特征）
+>
+
+2.进阶算法
+>PageRank算法（谷歌搜索引擎、全局重要性）
+>
+>HITS（主题依赖性、局部计算、收敛更快）
+
+3.应用场景
+>网络节点排序（学术文献影响力、社交网络影响力）
+>
+>交通网络优化（交通网络节点重要性分析）
+>
+>搜索引擎优化（搜索结果排序）
+>
+
+**数据集参考文献：**
 
 [1]: W. W. Zachary, An information flow model for conflict and fission in small groups, Journal of Anthropological Research 33, 452-473 (1977) 
 
