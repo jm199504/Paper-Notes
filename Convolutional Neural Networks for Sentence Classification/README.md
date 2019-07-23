@@ -13,6 +13,8 @@ Convolutional Neural Networks for Sentence Classification
 
 输入层通过卷积操作得到若干个Feature Map，h长度的k维词向量（大小为h×k）与长度为h的卷积核进行卷积操作，h值不固定。
 
+设句子的长度为n, 词向量的维度为k，每个卷积核的窗口大小为h*k，将其对输入层进行一次卷积，可得到(n-h+1)维的特征集合，我们称之为一个feature map，由于卷积核的权重是共享的，因此一个卷积核只能提取到某一类特征，我们有必要采取不同大小的卷积核进行卷积，如h分别为2，3，4的相当于语言模型中的2-gram,3-gram, 4-gram.
+
 池化层：
 
 文中称为Max-over-time Pooling，选择一维Feature Map中最大值（最重要的特征），最终池化层的输出为各个Feature Map的最大值，即一维向量，经过polling后大小为1×m（文中表明有m个卷积核）。
